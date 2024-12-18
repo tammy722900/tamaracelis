@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Tamara Celis Calvillo, Diseñadora Gráfica y Comunicadora Visual. Conoce mis habilidades, servicios, proyectos y contacta para colaborar.">
+    <meta name="keywords" content="Tamara Celis, Diseño Gráfico, Portafolio, Comunicación Visual, Proyectos Creativos">
+    <meta name="author" content="Tamara Celis Calvillo">
+    <title>Portafolio - Tamara Celis Calvillo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adaptados al diseño dorado y beige */
+        body {
+            font-family: 'Avenir', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f6f1;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #d4af37, #f9f6f1);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: #d4af37;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: #f9f6f1;
+            color: #333;
+        }
+        .section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .services, .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service, .project {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f6f1;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            transition: transform 0.3s;
+        }
+        .service:hover, .project:hover {
+            transform: scale(1.05);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        video {
+
+         width: 100%;
+          max-width: 1280px; /* Ajusta al máximo permitido */
+         height: auto; /* Mantiene la proporción */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #d4af37;
+            color: #fff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background: #d4af37;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+        form button:hover {
+            background: #b89629;
+        }
+        @media (max-width: 768px) {
+            .service, .project {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .service, .project {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portafolio de Tamara Celis Calvillo</h1>
+    </header>
+    <nav>
+        <a href="#intro">Sobre mí</a>
+        <a href="#cv">CV</a>
+        <a href="#services">Servicios</a>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section id="intro" class="section">
+        <h2>Presentación</h2>
+        <p>Hola, soy Tamara Celis Calvillo, estudiante de Diseño y Comunicación Gráfica en la Universidad del Valle de México, donde actualmente curso el 7mo semestre. Mi enfoque como diseñadora se basa en combinar creatividad y funcionalidad para desarrollar soluciones visuales que conecten con el público.</p>
+    </section>
+    <section id="cv" class="section">
+        <h2>Currículum Vitae</h2>
+        <img src="Currículum Vitae (3).png" alt="Imagen del CV de Tamara Celis" style="width:100%; max-width:600px; display:block; margin:auto;">
+    </section>
+    <section id="services" class="section">
+        <h2>Servicios y Habilidades</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Diseño Gráfico</h3>
+                <p>Creación de identidades visuales únicas y memorables.</p>
+            </div>
+            <div class="service">
+                <h3>Fotografía Publicitaria</h3>
+                <p>Imágenes de alta calidad que comunican ideas claras.</p>
+            </div>
+            <div class="service">
+                <h3>Diseño UX/UI</h3>
+                <p>Experiencias de usuario optimizadas para diversas plataformas.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="section">
+        <h2>Portafolio</h2>
+        <div class="portfolio">
+            <div class="project">
+                <img src="arque.jpg" alt="Proyecto 1 de Tamara Celis">
+                <h3>Proyecto 1</h3>
+            </div>
+            <div class="project">
+                <img src="ilustración.jpg" alt="Proyecto 2 de Tamara Celis">
+                <h3>Proyecto 2</h3>
+            </div>
+            <div class="project">
+                <img src="harry.jpg" alt="Proyecto 3 de Tamara Celis">
+                <h3>Proyecto 3</h3>
+            </div>
+            <div class="project">
+                <img src="luchadores.jpg" alt="Proyecto 4 de Tamara Celis">
+                <h3>Proyecto 4</h3>
+            </div>
+            <div class="project">
+                <video controls>
+                    <source src="video colores.MP4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+                <h3>Proyecto Video</h3>
+            </div>
+            <div class="project">
+                <img src="dino.jpg" alt="Proyecto 5 de Tamara Celis">
+                <h3>Proyecto 5</h3>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contacto</h2>
+        <form action="send_form.php" method="post">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tamara Celis Calvillo - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
